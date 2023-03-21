@@ -1,0 +1,165 @@
+#newHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headerLogo{
+    text-decoration: none;
+}
+
+.navbar{
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--primaryBackground);
+
+    font-size: 17px;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    margin: 0;
+
+    display: block;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--primary400);
+}
+
+/* Display the dropdown on hover or focus */
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul{
+    display: initial
+}
+
+/* ========== SEARCH CONTAINER ========== */
+
+
+.search-container input {
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    width: 120px;
+}
+
+.search-container button {
+    float: right;
+    padding: 8px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*============= Dropdown menus =========== */
+.navbar ul li ul {
+    position: absolute;
+    left:0;
+    width: 150px;
+    background-color: var(--primary400);
+    display: none;
+}
+.navbar ul li ul li{
+    width: 100%;
+
+}
+.navbar ul li ul li a:hover{
+    background-color: var(--primaryBackground);
+    color: var(--primary400);
+    border: 0;
+}
+.navbar ul li ul li ul{
+    left: 150px;
+    top: 0;
+}
+
+/*============= Responsiveness =========== */
+
+#menuToggle{
+    display: none;
+}
+
+#newHeader label{
+    color: var(--primaryBackground);
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:1080px){
+    #newHeader label{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary400);
+        display: none;
+        z-index: 20;
+    }
+
+    .navbar ul li {
+        width: 100%;        
+        border-top: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+    .navbar ul li ul li {
+        background-color: var(--primary200);
+    }
+    .navbar ul li ul li ul {
+
+        width: 100%;
+        left: 0;
+    }
+    .navbar ul li ul li ul li {
+        background-color: var(--primary100);
+    }
+
+    #menuToggle:checked ~ .navbar{
+        display: initial;
+    }
+
+    .search-container{
+        position: relative;
+        padding: 0 1.5em;
+    }
+
+    .search-container input {
+        padding: 8px;
+        font-size: 17px;
+        border: none;
+        width: auto;
+        float: left;
+    }
+    
+    .search-container button {
+        float: left;
+        padding: 8px 10px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+}

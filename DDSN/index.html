@@ -1,0 +1,452 @@
+<!-- Landing page is for a residential college of a university to be used to advertise their on premises
+    accommodation for undergraduate students and collect the details of prospects for remarketing. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Stylesheet and icons -->
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <title>My College</title>
+    </head>
+
+    <body>
+        <!-- ============ HEADER / NAVBAR ============ -->
+        <!-- The design should container a header with a logo, menu (on hover it should reveal sub menu items) and a search form (search form doesn't need to work). -->
+        <header>
+            <div class="container" id="newHeader">
+                <a href="#" id="headerLogo"><h1>Academy</h1></a>
+
+                <input type="checkbox" id="menuToggle" />
+                <label for="menuToggle"><i class="fa fa-bars"></i></label>
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#">About +</a>
+                            <ul>
+                                <li><a href="#">Extra 1</a></li>
+                                <li><a href="#">Extra 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pages +</a>
+                            <ul>
+                                <li><a href="#">Extra 1</a></li>
+                                <li><a href="#">Extra 2</a></li>
+                                <li>
+                                    <a href="#">Extra 3 +</a>
+                                    <ul>
+                                        <li><a href="#">Extra 1</a></li>
+                                        <li><a href="#">Extra 2</a></li>
+                                        <li><a href="#">Extra 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Review</a></li>
+                        <li>
+                            <div class="search-container">
+                                <form action="" onsubmit="return false">
+                                    <input
+                                        type="text"
+                                        placeholder="Search..."
+                                        name="search"
+                                    />
+                                    <button type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ============ SLIDER / SUBHEADER ============ -->
+        <!-- A sub header which will contain a rotator/slider, place a contact form on top of the rotator, collect fields first name, second name,
+            email, phone number and submit button (Not mandatory - but if you can show basic validation on the form), on submit the fields should
+            disappear and a personalized message should be displayed (take data from the form and populate the message with it).  -->
+        <div class="subheader">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img
+                        src="https://images.unsplash.com/photo-1562774053-701939374585"
+                    />
+                </div>
+
+                <div class="mySlides fade">
+                    <img
+                        src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66"
+                    />
+                </div>
+
+                <div class="mySlides fade">
+                    <img
+                        src="https://images.unsplash.com/photo-1635557297490-b9c99368384b"
+                    />
+                </div>
+
+                <!-- Slider Controls -->
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <h2>Join our Community</h2>
+                <form action="" id="contactForm">
+                    <div class="inputBox">
+                        <label for="fname">First name:</label>
+                        <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            placeholder="Jane"
+                            aria-placeholder="Your first name"
+                            required
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <label for="lname">Last name:</label>
+                        <input
+                            type="text"
+                            id="lname"
+                            name="lname"
+                            placeholder="Doe"
+                            aria-placeholder="Your last name"
+                            required
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="janeDoe@email.com"
+                            aria-placeholder="Your email"
+                            required
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <label for="phone">Phone:</label>
+                        <input
+                            type="number"
+                            id="phone"
+                            name="phone"
+                            placeholder="0412345678"
+                            aria-placeholder="Enter your phone number"
+                            required
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <button id="contactButton" type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <h4 id="response"></h4>
+            </div>
+        </div>
+
+        <!-- ============ SECTION 1 ============ -->
+        <!-- First section - 3 cards represented in a column layout, cards should feature a thumbnail, title and summary -->
+        <section id="section1">
+            <div class="container">
+                <div class="card">
+                    <!-- Thumbnail -->
+                    <img
+                        src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b"
+                        alt="An image"
+                    />
+
+                    <!-- Content -->
+                    <div class="card-content">
+                        <h3>Sample Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Thumbnail -->
+                    <img
+                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+                        alt="An image"
+                    />
+
+                    <!-- Content -->
+                    <div class="card-content">
+                        <h3>Sample Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Thumbnail -->
+                    <img
+                        src="https://images.unsplash.com/photo-1501503069356-3c6b82a17d89"
+                        alt="An image"
+                    />
+
+                    <!-- Content -->
+                    <div class="card-content">
+                        <h3>Sample Text</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 2 ============ -->
+        <!-- Second section - image left text right, text section should have a title, some dummy text and a cta button. -->
+        <section id="section2">
+            <div class="container">
+                <div class="imgBox">
+                    <img
+                        src="https://images.unsplash.com/photo-1570571054854-8f5a9f80504a?ixlib=rb-4.0.3&ixid=MnwxMjA
+                            3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+                        alt="An image"
+                    />
+                </div>
+                <div class="textBox">
+                    <h2>A title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Libero omnis hic facilis aliquid labore mollitia
+                        placeat, odit dicta quam, eveniet soluta eligendi
+                        molestiae harum maxime perspiciatis, at facere officiis
+                        debitis!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 3 ============ -->
+        <!-- Third section - Thumbnail gallery, 4 x2 images, would like to see some form of hover effect on the images, we could ask for them to implement
+            some sort of light box concept, if we want to do this might be a good idea to remove some of the other sections -->
+        <section class="container" id="section3">
+            <div class="gallery">
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt="1"
+                        onclick="openModal(this)"
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1527891751199-7225231a68dd"
+                        alt="2"
+                        onclick="openModal(this)"
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1613896527026-f195d5c818ed"
+                        alt="3"
+                        onclick="openModal(this)"
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt=""
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt=""
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt=""
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt=""
+                    />
+                </div>
+                <div class="thumbnail">
+                    <img
+                        src="https://images.unsplash.com/photo-1635821620693-b6863c79db72"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SECTION 4 ============ -->
+        <!-- Fourth section - Content block with subheadings and more content. -->
+        <section id="section4">
+            <div class="container">
+                <!-- Feature item -->
+                <div class="content">
+                    <div class="imgBox">
+                        <img
+                            src="https://images.unsplash.com/photo-1570571054854-8f5a9f80504a?ixlib=rb-4.0.3&ixid=MnwxMjA
+                                3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+                            alt="An image"
+                        />
+                    </div>
+                    <div class="textBox">
+                        <h2>A title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature item -->
+                <div class="content reversed">
+                    <div class="imgBox">
+                        <img
+                            src="https://images.unsplash.com/photo-1570571054854-8f5a9f80504a?ixlib=rb-4.0.3&ixid=MnwxMjA
+                                3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+                            alt="An image"
+                        />
+                    </div>
+                    <div class="textBox">
+                        <h2>A title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature item -->
+                <div class="content">
+                    <div class="imgBox">
+                        <img
+                            src="https://images.unsplash.com/photo-1570571054854-8f5a9f80504a?ixlib=rb-4.0.3&ixid=MnwxMjA
+                                3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+                            alt="An image"
+                        />
+                    </div>
+                    <div class="textBox">
+                        <h2>A title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Libero omnis hic facilis aliquid labore
+                            mollitia placeat, odit dicta quam, eveniet soluta
+                            eligendi molestiae harum maxime perspiciatis, at
+                            facere officiis debitis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FOOTER ============ -->
+        <footer>
+            <!-- Footer - 3 cols with links to the site navigation, last col should have a logo of some sort -->
+            <div class="container">
+                <div class="footer-column">
+                    <!-- Content -->
+                    <ul class="footer-content">
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <!-- Content -->
+                    <ul class="footer-content">
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <!-- Content -->
+                    <ul class="footer-content">
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                        <li><a href="#">A Nav Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tag line which is centered at the bottom under the cols "Built with Acora" -->
+        </footer>
+
+        <!-- ============ MODAL / LIGHTBOX ============ -->
+        <div id="lightBoxModal" class="modal" onclick="closeModal()">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="lightBoxFrame">
+                <img id="lightBoxImage" src="" alt="" />
+            </div>
+        </div>
+
+        <!-- <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+            omnis hic facilis aliquid labore mollitia placeat, odit dicta quam,
+            eveniet soluta eligendi molestiae harum maxime perspiciatis, at
+            facere officiis debitis!
+        </p>
+        <a href="#">Hyperlink 1</a>
+        <a href="#">Hyperlink 2</a>
+        <div class="huge-text">Huge Text</div>
+        <div class="big-text">Big Text</div> -->
+    </body>
+
+    <!-- Scripts -->
+    <!-- <script src="./scripts/navbar.js"></script> -->
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/lightbox.js"></script>
+</html>

@@ -1,0 +1,125 @@
+:root {
+    --primary100: #7098b2;
+    --primary200: #406e8c;
+    --primary300: #215170;
+    --primary400: #103953;
+
+    --textColour: #303030;
+
+    --primaryBackground: #ffffff;
+    --secondaryBackground: #dde9eb;
+    --alternativeBackground: #e8e9e9;
+
+
+}
+
+*{
+    transition: all 0.2s ease-out;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: Cambria, Georgia, serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+h1{
+    font-size: 48px;
+    color: var(--primaryBackground);
+    background-color: var(--primary300);
+    padding: .4em;
+    /* border-radius: .2em; */
+}
+
+h2{
+    font-size: 36px;
+    color: var(--textColour);
+}
+
+h3{
+    font-size: 30px;
+    color: var(--primary300);
+}
+
+h4{
+    font-size: 24px;
+    color: var(--primary300);
+}
+
+h5{
+    font-size: 22px;
+    color: var(--primary300);
+}
+
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--textColour);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--textColour);
+}
+
+a:link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--primary300);    
+    padding: .4em;
+}
+a:visited{
+    color: var(--textColour);
+}
+a:hover{
+    font-weight: bold;
+    color: var(--primaryBackground);
+    /* background-color: var(--primary300); */
+    text-decoration: none;
+}
+a:active{
+    background-color: var(--primary100);
+}
+
+.huge-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: var(--textColour);    
+}
+
+.big-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--textColour);    
+}
+
+body{
+    background-color: var(--secondaryBackground);
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 1080px and up) */
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 80%;
+    }
+}
