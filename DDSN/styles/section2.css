@@ -11,21 +11,41 @@
 
 #section2 .container .imgBox {
     padding: 0 1em;
-    flex: 1;
+    flex:1;
 }
 
 #section2 .container .imgBox img {
     width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    height: 100%;
 }
 
 #section2 .container .textBox {
     padding: 0 1em;
     width: auto;
-    flex: 1;
+    flex:1;
 }
 
 #section2 h2, #section2 p {
     color: var(--primaryBackground) !important;
+    margin-top: 1em;
+}
+
+.ctaButton {
+    margin-top: 2em;
+    padding: .5em 2em;
+    border: 2px var(--primaryBackground) solid;
+    border-radius: 0;
+    background-color: var(--primary300);
+    color: var(--primaryBackground);
+    font-size: 18px;
+}
+
+.ctaButton:hover {
+    background-color: var(--primaryBackground);
+    color: var(--primary300);
+    cursor: pointer;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -41,4 +61,10 @@
     #section2 .container {
         flex-direction: row;
     }
+
+    
+    #section2 h2, #section2 p {
+        margin-top: .5em;
+    }
+
 }

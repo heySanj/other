@@ -63,6 +63,12 @@ p{
     font-weight: normal;
     font-size: 20px;
     color: var(--textColour);
+    text-align: justify;
+}
+
+a{
+    padding: .4em;
+    font-weight: bold;
 }
 
 a:link{
@@ -78,8 +84,10 @@ a:visited{
 a:hover{
     font-weight: bold;
     color: var(--primaryBackground);
-    /* background-color: var(--primary300); */
+    background-color: var(--primary300);
     text-decoration: none;
+    cursor: pointer;
+
 }
 a:active{
     background-color: var(--primary100);

@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+#headerLogo img{
+    width: 12em;
+}
+
 .navbar{
     margin: 0;
 }
@@ -59,7 +63,7 @@
 
 .search-container button {
     float: right;
-    padding: 8px 10px;
+    padding: 8px;
     background: #ddd;
     font-size: 17px;
     border: none;
@@ -108,7 +112,7 @@
 
     .navbar{
         position: absolute;
-        top: 10%;
+        top: 7%;
         left: 0;
         right: 0;
         background-color: var(--primary400);

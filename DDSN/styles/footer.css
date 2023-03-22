@@ -1,16 +1,18 @@
 footer {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     background-color: var(--textColour);
 }
 
 footer .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 footer .footer-column {
-    flex: 1;
+    flex: 100%;
+    width: 80%;
+    margin: 3em;
     display: flex;
     flex-direction: column;
 }
@@ -18,36 +20,70 @@ footer .footer-column .footer-content {
     width: auto;
 }
 
+footer .footer-column h3 {
+    padding-bottom: .5em;
+    color: var(--primaryBackground);
+    text-align: center;
+    border-bottom: 3px solid rgb(87, 87, 87);
+}
+
 .footer-content {
     list-style-type: none;
     padding: 0;
-
-    border-left: 2px solid;
-    border-color: rgba(255, 255, 255, 0.13);
-    padding-left: 1em;
+    text-align: center;
 }
 
 .footer-content li {
-    margin: 0.5em 0;
+    margin: 0.8em 0;
 }
 
 .footer-content a {
     color: var(--primaryBackground);
     text-decoration: none;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+}
+.footer-content a:hover {
+    background-color: var(--primaryBackground);
+    color: var(--textColour);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+.subtleText{
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 1em;
+    font-style: italic;
+}
+
+#footerLogo{
+    width: 14em;
+}
+
+.signature{
+    background-color: black;
+    color: rgb(138, 138, 138);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Small devices (portrait tablets and large phones, 400px and up) */
+@media only screen and (min-width: 400px) {
+    footer .footer-column {
+        flex: 50.00%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    footer .footer-column {
+        flex: 25.33%;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    footer .container {
-        flex-direction: row;
-    }
+
 }
