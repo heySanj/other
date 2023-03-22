@@ -19,10 +19,10 @@
 
 .gallery .thumbnail img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     cursor: pointer;
     box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.1);
-    height: 100%;
     z-index: 1;
 }
 

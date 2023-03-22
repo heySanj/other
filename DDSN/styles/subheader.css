@@ -5,7 +5,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     width: 100%;
 
@@ -76,18 +76,34 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .slideshow-container {
+        height: 600px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {    
-
+    .slideshow-container {
+        height: 700px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .slideshow-container {
+        height: 800px;
+    }
+
     .prev,
     .next {
         top: 35%;
+    }
+}
+/* Xtra large devices*/
+@media only screen and (min-width: 2000px) {
+
+    .slideshow-container {
+        height: 1000px;
     }
 }

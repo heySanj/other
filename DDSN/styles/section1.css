@@ -35,8 +35,7 @@
 .readMore{
     color: var(--primary300);
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid rgb(219, 219, 219);
-    width: 40%;
+    border: 2px solid var(--primary300);
     align-self: flex-end;
     text-align: center;
 }
