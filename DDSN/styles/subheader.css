@@ -79,6 +79,10 @@
     .slideshow-container {
         height: 400px;
     }
+    .prev,
+    .next {
+        top: 30% !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -97,7 +101,7 @@
 
     .prev,
     .next {
-        top: 45% !important;
+        top: 40% !important;
     }
 }
 /* Xtra large devices*/
