@@ -31,7 +31,10 @@
                 /></a>
 
                 <input type="checkbox" id="menuToggle" />
-                <label for="menuToggle"><i class="fa fa-bars"></i></label>
+                <label for="menuToggle"
+                onclick="toggleMenuIcon()"
+                    ><img id="menuToggleIcon" type="icon" src="./images/menu_icon.png"
+                /></label>
 
                 <nav class="navbar">
                     <ul>
@@ -175,10 +178,7 @@
             <div class="container">
                 <div class="card">
                     <!-- Thumbnail -->
-                    <img
-                        src="./images/class.jpg"
-                        alt="Students in class"
-                    />
+                    <img src="./images/class.jpg" alt="Students in class" />
 
                     <!-- Content -->
                     <div class="card-content">
@@ -188,7 +188,7 @@
                             elit. Libero omnis hic facilis aliquid labore
                             mollitia placeat, odit dicta quam, eveniet soluta
                             eligendi molestiae harum maxime perspiciatis, at
-                            facere officiis debitis! 
+                            facere officiis debitis!
                         </p>
                         <a class="readMore">Read More</a>
                     </div>
@@ -219,21 +219,17 @@
 
                 <div class="card">
                     <!-- Thumbnail -->
-                    <img
-                        src="./images/library_girl.jpg"
-                        alt="An image"
-                    />
+                    <img src="./images/library_girl.jpg" alt="An image" />
 
                     <!-- Content -->
                     <div class="card-content">
                         <h3>Academic Advantage</h3>
                         <p>
-                            Neque vitae tempus quam pellentesque nec
-                            nam aliquam sem et. Donec ultrices tincidunt arcu
-                            non. Sed blandit libero volutpat sed cras ornare
-                            arcu. Ridiculus mus mauris vitae ultricies leo
-                            integer. Gravida cum sociis natoque penatibus et
-                            magnis.
+                            Neque vitae tempus quam pellentesque nec nam aliquam
+                            sem et. Donec ultrices tincidunt arcu non. Sed
+                            blandit libero volutpat sed cras ornare arcu.
+                            Ridiculus mus mauris vitae ultricies leo integer.
+                            Gravida cum sociis natoque penatibus et magnis.
                         </p>
                         <a class="readMore">Read More</a>
                     </div>
@@ -510,11 +506,11 @@
                 <img id="lightBoxImage" src="" alt="" />
             </div>
         </div>
-
     </body>
 
     <!-- Scripts -->
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/contact.js"></script>
     <script src="./scripts/lightbox.js"></script>
+    <script src="./scripts/menuToggle.js"></script>
 </html>

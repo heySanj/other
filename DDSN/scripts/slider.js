@@ -5,9 +5,10 @@ let timer = setTimeout(slideNext, delay); // Change image every 8 seconds
 slideNext();
 
 
-
+// Move to the next slide
 function plusSlides(n) {
 
+    // Clear the timer that would have automatically moved the slide --> resetting it.
     clearTimeout(timer)
 
     const slides = toggleSlides()
